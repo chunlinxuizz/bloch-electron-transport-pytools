@@ -1,6 +1,7 @@
 # TE_Calc_Toolkit
 - Small codes to treat [CP2K](https://www.cp2k.org/)
 outputs for transport calculations using [AMSET](https://github.com/hackingmaterials/Amset)
+- They are still under development, any cooperation or suggestions are welcome😊
 - `my_cp2k_packages.cp2k_to_pymatgen` can parse CP2K input and output files and initialize
    useful objects of [pymatgen](https://pymatgen.org/), such as
   `<pymatgen.electronic_structure.Bandstructure>`
@@ -11,5 +12,5 @@ outputs for transport calculations using [AMSET](https://github.com/hackingmater
   accurate eigenvalues based on an ultra dense k-mesh is necessary before interpolation. However, it is memory intensive to
   calculate them in a single calculation. The purpose of `cp2k_transport.kmesh_to_cp2kinp` and `cp2k_transport.merge_cp2k_band` are
   spread the dense Monkhost-Pack k-mesh into several input files and merge the .bs files in to one, respectively.
-- the elastic constants, deformation potentials, as well as bandstructures are the input of AMSET to get thermoelectric transport
+- The elastic constants, deformation potentials, as well as bandstructures are the input of AMSET to get thermoelectric transport
   coefficients(https://hackingmaterials.lbl.gov/amset/)
