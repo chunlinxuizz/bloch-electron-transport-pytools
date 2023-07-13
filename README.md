@@ -11,6 +11,6 @@ outputs for transport calculations using [AMSET](https://github.com/hackingmater
 - A pymatgen `Bandstructure` object is needed to initialize the amset `Runner`, and to obtain accurate bandstructure,
   accurate eigenvalues based on an ultra dense k-mesh is necessary before interpolation. However, it is memory intensive to
   calculate them in a single calculation. The purpose of `cp2k_transport.kmesh_to_cp2kinp` and `cp2k_transport.merge_cp2k_band` are
-  spread the dense Monkhost-Pack k-mesh into several input files and merge the .bs files in to one, respectively.
+  to split the dense Monkhost-Pack k-mesh into several input files and merge the .bs files in to one, respectively.
 - The elastic constants, deformation potentials, as well as bandstructures are the input of AMSET to get thermoelectric transport
   coefficients(https://hackingmaterials.lbl.gov/amset/)
