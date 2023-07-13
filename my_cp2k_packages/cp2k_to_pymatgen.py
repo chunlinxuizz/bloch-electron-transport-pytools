@@ -16,15 +16,7 @@ class Cp2kBand:
     """
     
     def __init__(self):
-        """
-        Args:
-            Structure_File:
-                the file that contains structure imformation
-
-            Band_File:
-                the file that contains band structure information
-            
-        """
+        
     def parse_structure(self, Structure_File: str = "cp2k.inp"):
         self._Structure_File = Structure_File
         self.charge = 0
