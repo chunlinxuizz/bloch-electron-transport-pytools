@@ -1,7 +1,5 @@
-# TE_Calc_Toolkit
-- Small codes to treat [CP2K](https://www.cp2k.org/)
+- Small (self-using) codes to treat [CP2K](https://www.cp2k.org/)
 outputs for transport calculations using [AMSET](https://github.com/hackingmaterials/Amset)
-- They are still under development, any cooperation or suggestions are welcome😊
 - `my_cp2k_packages.cp2k_to_pymatgen` can parse CP2K input and output files and initialize
    useful objects of [pymatgen](https://pymatgen.org/), such as
   `<pymatgen.electronic_structure.Bandstructure>`
